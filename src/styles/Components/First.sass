@@ -1,0 +1,77 @@
+.first
+  height: 100vh
+  .Header
+    background: url('../img/header.png')
+    background-size: cover
+    background-position: center
+    position: fixed
+    height: 80px
+    width: 100%
+    top: 0
+    left: 0
+    .Logo
+      background: url('../img/logo.png')
+      background-size: cover
+      background-position: center
+      margin: 5px 10px
+      height: 65px
+      width: 115px
+  .Body
+    height: 100vh
+    +flex-column
+    +flex-fullCenter
+    .form
+      border: 1px solid $black-h
+      border-radius: 0.2em
+      background-color: rgba($white, .5)
+      padding: 10px
+      +flex-column
+      +flex-fullCenter
+      +text
+      transition: all 1.5s
+      &.off
+        transform: translate(-200%)
+        opacity: 0
+      *
+        margin: 5px 0
+      span
+        +text
+      input
+        text-align: center
+        padding: 2px 5px
+        border: none
+        border-radius: 0.8em
+        +text
+        color: $black
+        &:focus
+          outline: none
+      .loginButton
+        padding: 5px 0
+        width: 100px
+        +text
+        color: $green-d
+        border: 2px solid $green-d
+        border-radius: 0.8em
+        background: transparent
+        transition: all .3s
+        &:hover
+          color: $white
+          background: $green-l
+          border-color: $green-l
+
+  .Footer
+    text-align: center
+    position: fixed
+    bottom: 0
+    left: 0
+    padding: 10px 0
+    width: 100%
+    background-color: $black
+    .inscription
+      color: $white
+      font-family: "CodaCaption"
+      transition: all .3s
+      &:hover
+        cursor: pointer
+        color: $primary-l
+

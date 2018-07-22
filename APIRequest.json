@@ -1,0 +1,4 @@
+{
+  "GetToken": "http://gizeh.ddns.net/api/token?username=Sprite50360&password=achapeaul",
+  "GetInfos": "http://gizeh.ddns.net/api/user?token=C95np8aEqyJaI7n1vBJEVTuWCL8KfiUsXTs4y67OZf9JZzqf"
+}
