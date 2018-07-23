@@ -15,7 +15,7 @@ app.on('ready', function(){
         width: 800, 
         height: 450,
         resizable: false,
-        frame: true,
+        frame: false,
     });
     //Load html in window
     mainWindow.loadURL(url.format({

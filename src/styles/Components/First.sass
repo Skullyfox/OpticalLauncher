@@ -28,8 +28,9 @@
       +flex-column
       +flex-fullCenter
       +text
-      transition: all 1.5s
+      transition: all 1s
       &.off
+        position: absolute
         transform: translate(-200%)
         opacity: 0
       *
@@ -58,7 +59,64 @@
           color: $white
           background: $green-l
           border-color: $green-l
-
+    .Lobby
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
+      +subtitle
+      height: 310px
+      margin-top: 40px
+      width: 95%
+      padding: 10px
+      background-color: rgba($white, .5)
+      border: 2px solid $black-h
+      transition: all 1s
+      &.off
+        position: absolute
+        transform: translate(200%)
+        opacity: 0
+      .welcome
+        text-align: center
+      #username
+        text-transform: capitalize
+      .download
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        align-items: center
+        width: 100%
+        .bar
+          position: relative
+          height: 20px
+          width: 80%
+          background-color: $white-d
+          border: 1px solid $black-h
+          margin: 0 5px
+          &:before
+            content: ""
+            position: absolute
+            background-color: $green-l
+            top: 0
+            left: 0
+            height: 100%
+            width: 0%
+            transition: all 2.5s
+          &.downOk:before
+            width: 100%
+        .testDown
+          padding: 5px 2px
+          font-size: 15px
+          font-family: "PTRegular"
+          color: $white
+          border: 2px solid $primary
+          border-radius: 0.8em
+          background: $primary
+          transition: all .3s
+          &:hover
+            color: $white
+            background: $green-l
+            border-color: $green-l
   .Footer
     text-align: center
     position: fixed

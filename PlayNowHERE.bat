@@ -1,0 +1,1 @@
+BFHeroes +magma 0 +sessionId "{0}" +magma 0 +developer 1"
